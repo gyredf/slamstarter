@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectsController!{% endblock %}
+
+{% block body %}
+
+<p>
+
+<ul>
+{% for element in projects %}
+        <li>{{ element }}</li>
+{% endfor %} 
+</ul>
+
+<br>
+
+<p>{{ [projects[0], projects[1], projects[2]]|join(', ', ' et ') }}</p>
+
+{% endblock %}
